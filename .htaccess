@@ -1,0 +1,40 @@
+# BEGIN WP Hide & Security Enhancer
+<IfModule mod_rewrite.c> 
+RewriteEngine On 
+RewriteBase /wp/ 
+#WriteCheckString:1629096068_69365
+RewriteRule .* - [E=HTTP_MOD_REWRITE:On]
+RewriteRule ^rewrite_test_1629096068_69365/? /wp/wp-content/plugins/wp-hide-security-enhancer/include/rewrite-confirm.php [L,QSA]
+
+RewriteRule ^thydynoo/(.+) /wp/wp-content/themes/wandau-child/$1 [L,QSA]
+
+RewriteRule ^wygrydre/(.+) /wp/wp-content/themes/wandau/$1 [L,QSA]
+
+RewriteRule ^foftyjoo/(.+) /wp/wp-content/plugins/$1 [L,QSA]
+
+RewriteRule ^ehoaloaf/(.+) /wp/wp-includes/$1 [L,QSA]
+
+RewriteRule ^phiwhepa/(.+) /wp/wp-content/uploads/$1 [L,QSA]
+
+RewriteRule ^zuckoamp.php /wp/wp-comments-post.php [L,QSA]
+
+RewriteRule ^meechoap/(.+) /wp/wp-content/$1 [L,QSA]
+</IfModule> 
+
+# END WP Hide & Security Enhancer
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /wp/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wp/index.php [L]
+</IfModule>
+
+# END WordPress

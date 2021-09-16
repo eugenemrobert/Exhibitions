@@ -1,0 +1,2 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+$environment_variable = '{"theme":{"folder_name":"wandau","mapped_name":"wygrydre"},"child_theme":{"folder_name":"wandau-child","mapped_name":"thydynoo"},"allowed_paths":["\/home\/kakamega\/strathmore.designekta.com\/wp\/wp-content\/themes"],"cache_path":"\/home\/kakamega\/strathmore.designekta.com\/wp\/wp-content\/cache\/wph\/","wordpress_directory":"","site_relative_path":"\/wp\/"}'; ?>
